@@ -1,19 +1,3 @@
-"""
-Avaliação – Python + SQLite
-Tema: CRUD em 'alunos'
-
-O que o script deve fazer:
-1) Criar 'escola.db'
-2) Criar tabela 'alunos' -> Seguindo o diagrama
-3) Inserir registros na tabela alunos
-4) Listar todos
-5) Buscar por id
-6) Atualizar registros
-7) Deletar registros
-
-"""
-
-
 import sqlite3
 
 # 1° Passo: Conectar/criar o banco de dados
@@ -52,7 +36,7 @@ for linha in cursor.fetchall():
 print()
 
 # Passo 5: Atualizar um registro (exemplo: atualizar o e-mail da Julia)
-cursor.execute('UPDATE alunos SET email = ? WHERE nome = ?', ('ju3@gmail.com', 'Julia'))
+cursor.execute('UPDATE alunos SET email = ? WHERE nome = ?', ('jorbas@gmail.com', 'Jorbas'))
 conn.commit()
 
 print('Após atualização do email da Julia:')
